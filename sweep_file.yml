@@ -1,0 +1,19 @@
+program: /home/anass.grini/anass.grini/HPC_training/train_wandb.py
+method: bayes
+metric:
+  goal: minimize
+  name: Loss
+parameters:
+  lr:
+    max: 0.01
+    min: 1e-4
+    distribution: uniform
+  epochs:
+    max: 30
+    min: 10
+    distribution: int_uniform
+  batch_size:
+    values:
+      - 124
+      - 32
+    distribution: categorical
