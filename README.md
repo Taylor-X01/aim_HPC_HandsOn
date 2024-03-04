@@ -96,7 +96,17 @@ It is possible to open a terminal directly on a compute node on which the resour
 $ srun --pty --partition=gpu --nodes=1  --gres=gpu:1 [--other-options] bash
 ```
 
-## Make your script bash
+## Make your Bash script
+```sh
+#!/bin/bash
 
+#SBATCH --partition=gpu # partition name
+#SBATCH --account=<lab_account> # ONLY for Toubkal users
+#SBATCH --nodes=1  # number of nodes to reserve
+#SBATCH --gres=gpu:1 # use 1 gpus (On toubkal each node has 4 gpus)
+
+module load 
+
+```
 
 ## Run interactive node
