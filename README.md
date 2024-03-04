@@ -87,8 +87,6 @@ Where *JOBID*: Job identifier *PARTITION*: Partition used *NAME*: Job name *USER
 $ scancel <JOBID> 
 ```
 
-### pt_cloud-
-
 ### Obtaining a terminal on a GPU compute node
 
 It is possible to open a terminal directly on a compute node on which the resources have been reserved for you (here 4 cores) by using the following command:
